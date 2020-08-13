@@ -1,0 +1,71 @@
+ <nav> <span id="brand"> 
+<a href="index.html">
+WELDabmetal</a> </span> <ul id="menu"> <li><a href="#">Home</a></li> <li><a href="#">About</a></li> <li><a href=" http://weldabmetal.simplesite.com/443263696 ">Contact</a></li> <li><a href="#">FAQ</a></li> </ul> <div id="toggle"> <div class="span" id="one"></div> <div class="span" id="two"></div> 
+<div class="span" id="three"></div> </div> </nav> <div id="resize"> <ul id="menu"> <li><a href="#">Home</a></li> <li><a href="#">About</a></li> <li><a href="#">Contact</a></li> <li><a href="#">FAQ</a></li> </ul> </div> </div>
+<br /><br />
+<br /><br /><br /><br /><br /> <br /><br /><br /><br /> <br /><br /><br /><br /> <br /><br /><br /><br /> <br /><br /><br /><br /> <br /><br /><br /><br />
+
+<script> $("#toggle").click(function() { $(this).toggleClass('on'); $("#resize").toggleClass("active"); }); </script> 
+
+    <div id="instructions"> <video id="my-video" class="video-js /vjs-default-skin" width="340px" height="167px" controls preload="none" poster=' http://vjs.zencdn.net/v/oceans.png ' data-setup='{ "aspectRatio":"340:167", "playbackRates": [1, 1.5, 2] }'> <source src=" http://vjs.zencdn.net/v/oceans.mp4 " type='video/mp4'/> <source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm' /> <track kind="captions" src="../docs/examples/shared/example-captions.vtt" src lang="en" label="English"> </video>
+         <style> #instructions { max-width: 340px; text-align: left; margin: 30px auto; } #instructions textarea { width: 100%; height: 100px; } /* Show the controls (hidden at the start by default) */ .video-js .vjs-control-bar { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; } /* Make the demo a little prettier */ 
+body { 
+margin-top: 20px; background: #822; 
+text-align: center; color: #aaa; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; background: radial-gradient(#333, hsl(200,30%,6%) ); } a, a:hover, a:visited { color: #76DAFF; } </style>
+        <div id='media-controls'>
+            <progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
+            <button id='replay-button' class='replay' title='replay' onclick='replayMedia();'>Replay</button>    
+            <button id='play-pause-button' class='play' title='play' onclick='togglePlayPause();'>Play</button>
+            <button id='stop-button' class='stop' title='stop' onclick='stopPlayer();'>Stop</button>
+            <button id='volume-inc-button' class='volume-plus' title='increase volume' onclick='changeVolume("+");'>Increase volume</button>
+            <button id='volume-dec-button' class='volume-minus' title='decrease volume' onclick='changeVolume("-");'>Decrease volume</button>
+            <button id='mute-buttoWELDABMETALn' class='mute' title='mute' onclick='toggleMute("true");'>Mute</button>    
+        </div>
+ </div>
+              <div id='media-play-list'>
+            
+            <h2>Play list</h2>
+<hr>
+<br />
+
+            <ul>
+                <li><span class='play-item' onclick='loadVideo(" https://archive.org/download/HomeiraMusicVideos/Homayra-Donya.Donya-mosicvideo.com.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button> </span></li>
+<br />
+                <li><span class='play-item' onclick='loadVideo(" https://archive.org/download/HomeiraMusicVideos/Homayra-Shenidam-mosicvideo.com.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button> </span></li>
+ 
+  <br />               <li><span class='play-item' onclick='loadVideo(" https://ia801202.us.archive.org/3/items/Baran-Music.Videos/Baran-Dori-Live-mosicvideo.com.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button> </span></li>
+ 
+  <br />
+  <li><span class='play-item' onclick='loadVideo(" https://ia601202.us.archive.org/3/items/Baran-Music.Videos/Baran-Lanat-mosicvideo.com.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button> </span></li>
+ 
+  <br /><li><span class='play-item' onclick='loadVideo(" https://archive.org/download/Ahllam-Music.Videos/Ahllam-Dele.Divooneh-mosicvideo.com.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button> </span></li>
+ 
+  <br />
+  <li><span class='play-item' onclick='loadVideo(" https://archive.org/download/Ahllam-Music.Videos/Ahllam-Ya.Hichki.Ya.To-mosicvideo.com.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button>
+             </span></li>
+             <br /> <li><span class='play-item' onclick=' loadVideo (" https://archive.org/download/MoeinVideos/Moein-Bi.To.Nemitoonam-mosicvideo.com.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button> </span></li>
+ 
+   <br />          
+             <li><span class='play-item' onclick=' loadVideo (" http://vjs.zencdn.net/v/oceans.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button> </span></li>
+             <br /> <li><span class='play-item' onclick='loadVideo(" http://vjs.zencdn.net/v/oceans.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button> </span></li>
+             <br /> <li><span class='play-item' onclick='loadVideo(" http://vjs.zencdn.net/v/oceans.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button> </span></li>
+ 
+             <br /> <li><span class='play-item' onclick='loadVideo(" http://vjs.zencdn.net/v/oceans.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button> </span></li>
+             <br /> <li><span class='play-item' onclick='loadVideo(" http://vjs.zencdn.net/v/oceans.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button> </span></li>
+ 
+             <br /> <li><span class='play-item' onclick='loadVideo(" http://vjs.zencdn.net/v/oceans.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span>VIDEO N.01</button> </span></li>
+ 
+             <br /> <li><span class='play-item' onclick='loadVideo(" http://vjs.zencdn.net/v/oceans.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button> </span></li>
+ 
+             <br />
+                <li><span class='play-item' onclick=' loadVideo (" http://vjs.zencdn.net/v/oceans.mp4 ");'> <button type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button> </span></li>
+                <br />  <li><span class='play-item' onclick=' loadVideo (" http://vjs.zencdn.net/v/oceans.mp4 ");'><br /> </span> <button id="b1" type="button" class="btn btn-warning btn-lg btn3d"><span class="glyphicon glyphicon-warning-sign"></span> VIDEO N.01 </button> </li>
+</ul>
+</div>
+        </div>
+    </div> 
+    
+    
+     <hr>
+         
+ <footer class="footer"> 
